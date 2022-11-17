@@ -23,7 +23,7 @@ def get_data_from_excel(file_name_path, sheet_name):
     return dataframe1
 
 
-df = get_data_from_excel("Easter Seals_09012022_104104.xlsx", "Sheet1")
+df = get_data_from_excel("example.xlsx", "Sheet1")
 
 # -- pandas really doesn't like spaces, removed spaces and added underscore --#
 df.columns = df.columns.str.replace(' ', '_')
